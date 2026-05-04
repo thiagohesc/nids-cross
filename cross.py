@@ -195,8 +195,8 @@ def avaliar_cross(con, source_key: str, target_key: str) -> dict:
 if __name__ == "__main__":
     con = conectar_duckdb_s3()
 
-    SOURCE = "unsw"
-    TARGET = "cicids"
+    SOURCE = "cicids"
+    TARGET = "bot"
 
     avaliar_cross(
         con=con,
