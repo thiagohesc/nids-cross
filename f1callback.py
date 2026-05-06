@@ -55,9 +55,9 @@ class F1Callback(Callback):
             zero_division=0,
         )
 
-        f1_key = f"{self.prefix}_f1_label_{self.target_label}"
-        precision_key = f"{self.prefix}_precision_label_{self.target_label}"
-        recall_key = f"{self.prefix}_recall_label_{self.target_label}"
+        f1_key = f"{self.prefix}_f1"
+        precision_key = f"{self.prefix}_precision"
+        recall_key = f"{self.prefix}_recall"
 
         # Salva no logs (para EarlyStopping / ModelCheckpoint)
         logs[f1_key] = f1
